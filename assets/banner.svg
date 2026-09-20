@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#311042"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" rx="16" fill="url(#bgGrad)"/>
+
+  <!-- Dynamic / Animated Background Wave Elements (Background Layer) -->
+  <g opacity="0.25">
+    <path fill="url(#accentGrad)">
+      <animate attributeName="d" 
+        dur="10s" 
+        repeatCount="indefinite"
+        values="
+          M0,160 Q300,90 600,160 T1200,160 L1200,300 L0,300 Z;
+          M0,180 Q300,230 600,150 T1200,180 L1200,300 L0,300 Z;
+          M0,160 Q300,90 600,160 T1200,160 L1200,300 L0,300 Z"
+      />
+    </path>
+    <path fill="#4f46e5" opacity="0.4">
+      <animate attributeName="d" 
+        dur="14s" 
+        repeatCount="indefinite"
+        values="
+          M0,200 Q400,250 800,170 T1200,210 L1200,300 L0,300 Z;
+          M0,150 Q400,100 800,210 T1200,160 L1200,300 L0,300 Z;
+          M0,200 Q400,250 800,170 T1200,210 L1200,300 L0,300 Z"
+      />
+    </path>
+  </g>
+
+  <!-- Subtle Tech Grid Background -->
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="200" y1="0" x2="200" y2="300"/>
+    <line x1="400" y1="0" x2="400" y2="300"/>
+    <line x1="600" y1="0" x2="600" y2="300"/>
+    <line x1="800" y1="0" x2="800" y2="300"/>
+    <line x1="1000" y1="0" x2="1000" y2="300"/>
+  </g>
+
+  <!-- Pulsing Glowing Nodes (Dynamic Element) -->
+  <circle cx="150" cy="80" r="4" fill="#a855f7" filter="url(#glow)">
+    <animate attributeName="r" values="3;6;3" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1050" cy="220" r="5" fill="#6366f1" filter="url(#glow)">
+    <animate attributeName="r" values="4;8;4" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.9;0.3" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="980" cy="70" r="4" fill="#ec4899" filter="url(#glow)">
+    <animate attributeName="r" values="3;7;3" dur="3.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Foreground Text Content & Badge -->
+  <!-- Top Badge -->
+  <rect x="390" y="38" width="420" height="32" rx="16" fill="url(#cardGrad)" stroke="#a855f7" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="600" y="59" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2" text-anchor="middle">
+    🚀 CURATED INSURTECH &amp; RISK ECOSYSTEM
+  </text>
+
+  <!-- Main Title -->
+  <text x="600" y="130" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="900" letter-spacing="-0.5" text-anchor="middle" filter="url(#glow)">
+    Awesome Insurance Underwriting Platform
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="175" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" text-anchor="middle">
+    Automated Risk Assessment • Policy Rating • Decision Engines • Actuarial Systems
+  </text>
+
+  <!-- Pills / Highlights -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle">
+    <!-- Pill 1 -->
+    <rect x="290" y="215" width="180" height="36" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <text x="380" y="238" fill="#38bdf8">⚡ SaaS &amp; Enterprise</text>
+
+    <!-- Pill 2 -->
+    <rect x="510" y="215" width="180" height="36" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <text x="600" y="238" fill="#34d399">🔓 Open-Source Tools</text>
+
+    <!-- Pill 3 -->
+    <rect x="730" y="215" width="180" height="36" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <text x="820" y="238" fill="#f472b6">🤖 AI &amp; Agentic Mesh</text>
+  </g>
+</svg>
