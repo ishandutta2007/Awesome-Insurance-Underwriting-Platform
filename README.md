@@ -48,6 +48,7 @@ This repository tracks top-tier **SaaS underwriting platforms**, **actuarial rat
 | **Artificial Labs** | Algorithmic underwriting & digital contract platform for commercial and specialty insurance risk placement. | **$67M+ Raised** (Series B, $45M in 2026) | Custom SaaS Subscription | Book-a-Demo / Pilot Program |
 | **Send Technology** | AI-native underwriting workbench for risk submission triage, policy rating, and automated decision orchestration. | **Acquired by Duck Creek / £10M-£50M Rev** | Enterprise SaaS Pricing | Book-a-Demo / Pilot Trial |
 | **Cytora** | Generative & agentic AI risk-processing platform digitizing unstructured submissions for commercial underwriting. | **Acquired by Applied Systems / $10.6M Rev** | Enterprise Custom Tier | Book-a-Demo / Enterprise Pilot |
+| **[Ptally](https://ptally.ai/)** | AI-enabled pricing platform and rating engine for insurers and MGAs: rates and rules built from rating guides, Excel or US filings, regression-tested on every change, served via real-time pricing API, quote forms and MCP. | **50M+ quotes served / <$50M valuation** | Up to 1% of GWP (Performance plan) or flat fee per live model | No implementation fee; build, test and launch included |
 
 ---
 
